@@ -1,0 +1,19 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.result-container {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  background-color: #ffffff;
+  border: 0.1vw solid #6c757d;
+}
+
+.header {
+  background-color: #f0f0f0;
+  margin-bottom: 1.5vh;
+}
