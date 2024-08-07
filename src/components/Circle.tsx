@@ -14,7 +14,7 @@ const Circle: React.FC<CircleProps> = ({
   value,
   type = ResultType.PRIMARY,
   fallbackValue = "",
-}: CircleProps) => {
+}) => {
   return (
     <div
       className={clsx("circle", {
