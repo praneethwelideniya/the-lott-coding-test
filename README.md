@@ -1,6 +1,6 @@
-# Coding Test - Show Powersball Result
+# Coding Test - Show/Reset Powerball Results
 
-The project include below features:
+The project includes below features:
 
 - Autofill the previous week’s Powerball draw numbers within a ticket layout via the purple autofill button(flash icon).
 - Clear the numbers from the ticket via the grey delete button(trash icon).
