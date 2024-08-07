@@ -1,11 +1,14 @@
 import { useState } from "react";
 import "./App.css";
 import {
+  PRIMARY_NUMBERS,
   PRIMARY_WINNING_NUMBERS,
   ResultType,
+  SECONDARY_NUMBERS,
   SECONDARY_WINNING_NUMBERS,
 } from "./constants";
 import Circle from "./components/Circle";
+import Squre from "./components/Squre";
 
 const defaultPrimaryNumbers = Array(PRIMARY_WINNING_NUMBERS).fill(undefined);
 const defaultSecondaryNumbers = Array(SECONDARY_WINNING_NUMBERS).fill(
@@ -42,6 +45,29 @@ function App() {
             key={index}
             type={ResultType.SECONDARY}
             fallbackValue="PB"
+          />
+        ))}
+      </div>
+      {/* Primary Numbers List */}
+      <div className="results-grid">
+        {Array.from({ length: PRIMARY_NUMBERS }).map((_, index) => (
+          <Squre
+            value={index + 1}
+            isSelected={primaryNumbers.includes(index + 1)}
+            key={index}
+          />
+        ))}
+      </div>
+      <div className="power-ball-text">
+        <h2>Powerball</h2>
+      </div>
+      {/* Secondary Numbers List */}
+      <div className="results-grid">
+        {Array.from({ length: SECONDARY_NUMBERS }).map((_, index) => (
+          <Squre
+            value={index + 1}
+            isSelected={secondaryNumbers.includes(index + 1)}
+            key={index}
           />
         ))}
       </div>

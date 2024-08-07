@@ -27,6 +27,25 @@
   position: relative;
 }
 
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(10, minmax(0, 1fr));
+  gap: 2px;
+  padding: 10px 4px;
+}
+
+.power-ball-text {
+  width: 100%;
+  background-color: #878d92;
+  color: #ffffff;
+  font-weight: bold;
+}
 /* Large devices such as laptops (1024px and up) */
 @media only screen and (min-width: 1024px) {
   .result-container {
