@@ -10,6 +10,7 @@ import {
 import Circle from "./components/Circle";
 import Squre from "./components/Squre";
 import Operator from "./components/Operator";
+import { getResults } from "./api";
 
 const defaultPrimaryNumbers = Array(PRIMARY_WINNING_NUMBERS).fill(undefined);
 const defaultSecondaryNumbers = Array(SECONDARY_WINNING_NUMBERS).fill(
@@ -31,7 +32,13 @@ function App() {
   };
 
   const callResults = async () => {
-    /* calling Api */
+    try {
+      const result = await getResults();
+      setPrimaryNumbers(result.PrimaryNumbers);
+      setSecondaryNumbers(result.SecondaryNumbers);
+    } catch (error) {
+      alert("Failed to fetch");
+    }
   };
 
   return (
