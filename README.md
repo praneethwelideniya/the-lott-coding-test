@@ -68,5 +68,3 @@ The project includes below features:
    ```sh
    npm run test-coverage
    ```
-
-```
