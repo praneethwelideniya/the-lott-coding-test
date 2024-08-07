@@ -39,7 +39,7 @@ The project includes below features:
      ```sh
      touch .env.production
      ```
-   - Add the following environment variable to both files:
+   - Add the following environment variable:
      ```sh
      VITE_API_URL=https://data.api.thelott.com
      ```
