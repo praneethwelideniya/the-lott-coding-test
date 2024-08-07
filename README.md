@@ -16,6 +16,11 @@ The project includes below features:
 
 ## Setup Steps
 
+**Make sure you have the following installed**:
+
+Node.js (>=18.x)
+npm (>86.x)
+
 1. **Clone the repository**:
 
    ```sh
