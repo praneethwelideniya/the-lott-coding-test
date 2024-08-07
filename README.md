@@ -20,55 +20,56 @@ The project includes below features:
 
 Node.js (>=18.x) and npm (>=8.x)
 
-1. **Clone the repository**:
+**Clone the repository**:
 
-   ```sh
-   git clone https://github.com/praneethwelideniya/the-lott-coding-test.git
-   cd the-lott-coding-test
-   ```
+```sh
+git clone https://github.com/praneethwelideniya/the-lott-coding-test.git
+cd the-lott-coding-test
+```
 
-2. **Install dependencies**:
+**Install dependencies**:
 
-   ```sh
-   npm install
-   ```
+```sh
+npm install
+```
 
-3. **Environment Variables**:
+**Environment Variables**:
 
-   - Create a `.env.local` file for local development:
-     ```sh
-     touch .env.local
-     ```
-   - Create a `.env.production` file for production:
-     ```sh
-     touch .env.production
-     ```
-   - Add the following environment variable:
-     ```sh
-     VITE_API_URL=https://data.api.thelott.com
-     ```
+- Create a `.env.local` file for local development:
+  ```sh
+  touch .env.local
+  ```
+- Create a `.env.production` file for production:
+  ```sh
+  touch .env.production
+  ```
+- Add the following environment variable:
+  ```sh
+  VITE_API_URL=https://data.api.thelott.com
+  ```
 
-4. **Run the application locally**:
+**Run the application locally**:
 
-   ```sh
-   npm run dev
-   ```
+```sh
+npm run dev
+```
 
-   This will run the application on `http://localhost:5173/`.
+This will run the application on `http://localhost:5173/`.
 
-5. **Build the application for production**:
+**Build the application for production**:
 
-   ```sh
-   npm run build
-   ```
+```sh
+npm run build
+```
 
-6. **Run tests**:
+**Run tests**:
 
-   ```sh
-   npm run test
-   ```
+```sh
+npm run test
+```
 
-7. **Run tests with coverage**:
-   ```sh
-   npm run test-coverage
-   ```
+**Run tests with coverage**:
+
+```sh
+npm run test-coverage
+```
