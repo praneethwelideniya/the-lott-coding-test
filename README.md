@@ -70,5 +70,3 @@ The project includes below features:
    ```
 
 ```
-
-```
