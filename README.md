@@ -18,8 +18,7 @@ The project includes below features:
 
 **Make sure you have the following installed**:
 
-Node.js (>=18.x)
-npm (>86.x)
+Node.js (>=18.x) and npm (>=8.x)
 
 1. **Clone the repository**:
 
