@@ -9,6 +9,7 @@ import {
 } from "./constants";
 import Circle from "./components/Circle";
 import Squre from "./components/Squre";
+import Operator from "./components/Operator";
 
 const defaultPrimaryNumbers = Array(PRIMARY_WINNING_NUMBERS).fill(undefined);
 const defaultSecondaryNumbers = Array(SECONDARY_WINNING_NUMBERS).fill(
@@ -24,11 +25,23 @@ function App() {
     defaultSecondaryNumbers
   );
 
+  const resetData = () => {
+    setPrimaryNumbers(defaultPrimaryNumbers);
+    setSecondaryNumbers(defaultSecondaryNumbers);
+  };
+
+  const callResults = async () => {
+    /* calling Api */
+  };
+
   return (
     <div className="result-container">
       {/* Header */}
       <header className="header">
         <h1>Powerball Results</h1>
+        <div className="button-container">
+          <Operator getData={callResults} resetData={resetData} />
+        </div>
       </header>
       {/* Result Numbers */}
       <div className="numbers-container">
